@@ -8,12 +8,23 @@ struct Args {
 
     #[arg(short, long, default_value_t = 1)]
     count: u8,
+
+    #[arg(short, default_value_t = false)]
+    newline: bool,
 }
 
 fn main() {
     let args = Args::parse();
 
-    for _ in 0..args.count {
-        println!("{}", args.input);
+    if args.newline == true {
+        for _ in 0..args.count - 1 {
+            println!("{} ", args.input);
+        }
+
+        print!("{}", args.input);
+    } else {
+        for _ in 0..args.count {
+            println!("{}", args.input);
+        }
     }
 }
