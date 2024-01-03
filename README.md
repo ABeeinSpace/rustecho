@@ -1,8 +1,8 @@
-# README
+# Readme
 
 This is a little side project I wrote to learn how to Rust (and how to write code using almost exclusively NeoVim as my IDE of choice). It's a decently fast clone of the `echo` shell builtin (that's mainly becuase it doesn't do a whole lot right now).
 
-## USAGE
+## Usage
 
 `rustecho` has 3 flags at the moment.
 
