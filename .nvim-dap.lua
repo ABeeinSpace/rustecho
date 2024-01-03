@@ -17,7 +17,7 @@ dap.configurations.rust = {
         type = "lldb",
         request = "launch",
         program = function()
-            return vim.fn.getcwd() .. "/target/debug/factorial"
+            return vim.fn.getcwd() .. "/target/debug/rustecho"
         end,
         cwd = "${workspaceFolder}",
         stopOnEntry = false,
