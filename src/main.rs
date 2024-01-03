@@ -1,5 +1,4 @@
 use clap::Parser;
-use std::{io, u8};
 
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
@@ -13,4 +12,8 @@ struct Args {
 
 fn main() {
     let args = Args::parse();
+
+    for _ in 0..args.count {
+        println!("{}", args.input);
+    }
 }
