@@ -20,7 +20,6 @@ fn main() {
         for _ in 0..args.count - 1 {
             println!("{} ", args.input);
         }
-
         print!("{}", args.input);
     } else {
         for _ in 0..args.count {
